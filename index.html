@@ -14,11 +14,11 @@ body {
     background-color: black;
 }
 .coreButton {
+	border-radius: 25px;
+	border: solid 1px rgba(0,0,0,0.5);
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", "Helvetica", sans;
     font-size: large;
 	font-weight: 600;
-    background-color: #EEE;
-	background: radial-gradient(ellipse 70% 28px,#333 50%,#222 85%);
     color: white;
 	text-shadow: 2px 2px 1px black;
     width: 170px;
@@ -27,13 +27,19 @@ body {
     text-align: center;
     cursor: pointer;
     position: relative;
-    box-shadow: inset 0 0 5px 5px #22F;
+	background-image: linear-gradient(-180deg, #337 0%, #115 100%);
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+				0 -0.25rem 1.5rem #00F inset,
+				0 0.55rem 0.5rem #CCF inset,
+				0 0.25rem 0.5rem 0 #66A inset;
 }
 .coreButton:hover {
-    background-color: #FFF;
-    box-shadow: inset 0 0 8px 8px #44F;
     color: white;
 	text-shadow: 2px 2px 1px black;
+	box-shadow: 0 1rem 1.25rem 0 rgba(22,75,195,0.50),
+				0 -0.25rem 1.5rem #00F inset,
+				0 0.55rem 0.7rem #FFF inset,
+				0 0.25rem 0.5rem 0 #66A inset;
 }
 .serviceButton {
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", "Helvetica", sans;
@@ -70,12 +76,14 @@ body {
     text-align: center;
     cursor: pointer;
     position: relative;
-    box-shadow: inset 0 0 3px 3px #DDD;
+    border: 5px;
+	border-style: outset;
 	text-shadow: 2px 2px 1px black;
 }
 .shortButton:hover {
     background-color: #272727;
-    box-shadow: inset 0 0 4px 4px #FFF;
+    border: 5px;
+	border-style: inset;
     color: white;
 	text-shadow: 2px 2px 1px black;
 }
@@ -95,7 +103,7 @@ body {
 }
 .shortVertTab {
     width: 24px;
-    height: 65px;
+    height: 75px;
 	border-radius: 12px 0px 0px 12px;
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
@@ -133,20 +141,20 @@ a:hover { color: yellow; }
 <center>
 <pre>
 &nbsp;
-<span style="color: #777;"> %%%%...%%.......%%%%...%%..%%..%%%%%......%%%%%%..%%..%%..%%%%%%..%%%%%%..%%%%%...%%%%%%...%%%%....%%%%...%%%%%%...%%%% </span>
-<span style="color: #999;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%%.%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%......%%    </span>
-<span style="color: #BBB;">%%......%%......%%..%%..%%..%%..%%..%%.......%%....%%.%%%....%%....%%%%....%%%%%...%%%%....%%%%%%..%%......%%%%.....%%%% </span>
-<span style="color: #DDD;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%..%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%..........%%</span>
-<span style="color: #FFF;"> %%%%...%%%%%%...%%%%....%%%%...%%%%%......%%%%%%..%%..%%....%%....%%%%%%..%%..%%..%%......%%..%%...%%%%...%%%%%%...%%%% </span>
+<span style="color: #999; text-shadow: 1px 1px 1px #666;"> %%%%...%%.......%%%%...%%..%%..%%%%%......%%%%%%..%%..%%..%%%%%%..%%%%%%..%%%%%...%%%%%%...%%%%....%%%%...%%%%%%...%%%% </span>
+<span style="color: #BBB; text-shadow: 1px 1px 1px #999;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%%.%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%......%%    </span>
+<span style="color: #DDD; text-shadow: 1px 1px 1px #BBB;">%%......%%......%%..%%..%%..%%..%%..%%.......%%....%%.%%%....%%....%%%%....%%%%%...%%%%....%%%%%%..%%......%%%%.....%%%% </span>
+<span style="color: #FFF; text-shadow: 1px 1px 1px #DDD;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%..%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%..........%%</span>
+<span style="color: #FFF; text-shadow: 1px 1px 1px #DDD;"> %%%%...%%%%%%...%%%%....%%%%...%%%%%......%%%%%%..%%..%%....%%....%%%%%%..%%..%%..%%......%%..%%...%%%%...%%%%%%...%%%% </span>
 &nbsp;
 </pre>
-<table style="border-spacing: 1px; box-shadow: 0 0 42px #777;">
+<table style="border-spacing: 0px;">
 	<tr>
-		<td><div class="coreButton">Contact&nbsp;&nbsp;&nbsp;⚡<a href="&#109;&#97;&#105;lto&#58;hel%6&#67;&#111;&#64;&#99;%&#54;C&#37;6F%75%64i%&#54;E&#116;%&#54;5rfa%63&#37;65s&#37;2&#69;%6&#50;i&#122;?S&#117;b&#37;6A%&#54;5&#99;t=&#87;%65%6&#50;C%6F%6&#69;&#37;74%61ct"><span class="link"></span></a></div></td>		
-		<td><div class="coreButton">Storefront&nbsp;&nbsp;&nbsp;🛒<a href="https://cloud-interfaces.square.site/"><span class="link"></span></a></div></td>
-		<td><div class="coreButton">Schedule&nbsp;&nbsp;&nbsp;📅<a href="https://calendly.com/cloudinterfaces/service-event"><span class="link"></span></a></div></td>
-		<td><div class="coreButton">Tools&nbsp;&nbsp;&nbsp;🛠️<a href="https://github.com/CloudInterfacesLLC/PowerShell"><span class="link"></span></a></div></td>
-		<td><div class="coreButton">Review&nbsp;&nbsp;&nbsp;🌟<a href="https://www.trustpilot.com/review/cloudinterfaces.biz"><span class="link"></span></a></div></td>
+		<td><div class="coreButton">&nbsp;Contact&nbsp;&nbsp;⚡<a href="&#109;&#97;&#105;lto&#58;hel%6&#67;&#111;&#64;&#99;%&#54;C&#37;6F%75%64i%&#54;E&#116;%&#54;5rfa%63&#37;65s&#37;2&#69;%6&#50;i&#122;?S&#117;b&#37;6A%&#54;5&#99;t=&#87;%65%6&#50;C%6F%6&#69;&#37;74%61ct"><span class="link"></span></a></div></td>		
+		<td><div class="coreButton">&nbsp;Storefront&nbsp;&nbsp;🛒<a href="https://cloud-interfaces.square.site/"><span class="link"></span></a></div></td>
+		<td><div class="coreButton">&nbsp;Schedule&nbsp;&nbsp;📅<a href="https://calendly.com/cloudinterfaces/service-event"><span class="link"></span></a></div></td>
+		<td><div class="coreButton">&nbsp;Tools&nbsp;&nbsp;🛠️<a href="https://github.com/CloudInterfacesLLC/PowerShell"><span class="link"></span></a></div></td>
+		<td><div class="coreButton">&nbsp;Review&nbsp;&nbsp;🌟<a href="https://www.trustpilot.com/review/cloudinterfaces.biz"><span class="link"></span></a></div></td>
 	</tr>
 </table>
 <pre style="font-size: 14px;">
@@ -350,7 +358,7 @@ We'll also courier over 3D prints, for travel rates, instead of shipping or loca
 <br>
 <table style="border-spacing: 1px; box-shadow: 5px 5px 15px #5dfcc4;"><!--5dfcc4-->
 	<tr>
-		<td><div class="vertTab" style="color: #5dfcc4;"><br><strong>&hairsp;&hairsp;Business,&hairsp;B2B</strong></div></td>
+		<td><div class="vertTab" style="color: #5dfcc4;"><br><strong>&nbsp;&nbsp;Business,&hairsp;B2B</strong></div></td>
 	    <td><div class="serviceButton"><br><strong>Your Model </strong>Parts Plate<br>Quantity to bed capacity<br>Up To <strong>100g</strong> filament<br>Up To <strong>6hr</strong> print<br><br><strong>$7 Flat Rate</strong><a href="https://cloud-interfaces.square.site/product/3d-small-prototype-bundle/56"><span class="link"></span></a></div></td>
 		<td><div class="serviceButton"><br><strong>Your Model </strong>Parts Plate<br>Quantity to bed capacity<br>Up To <strong>250g</strong> filament<br>Up To <strong>12hr</strong> print<br><br><strong>$14 Flat Rate</strong><a href="https://cloud-interfaces.square.site/product/3d-medium-prototype-bundle/57"><span class="link"></span></a></div></td>
 		<td><div class="serviceButton"><br><strong>Our Model </strong>Parts Plate<br>1HR CAD File Delivery<br>Up To <strong>250g</strong> filament<br>Up To <strong>12hr</strong> print<br><br><strong>$36 Flat Rate</strong><a href="https://cloud-interfaces.square.site/product/3d-1hr-design-bundle/61"><span class="link"></span></a></div></td>
@@ -379,18 +387,19 @@ We'll also courier over 3D prints, for travel rates, instead of shipping or loca
 <pre style="color: #66FFFF; font-size: 14px;">
 <strong>Prusa <a href="https://www.prusa3d.com/product/original-prusa-mk4-2/">MK4</a> 3D Printed, Prototype and Small Batch Manufacturing Services:</strong>
 - Custom cooling ducts, adapters, mounts, PCB cases, and custom functional mechanical parts.
-- Business needs: multi-color signs, instant tools, hinges/handles, organizers, and dispensers.
-- In-house rapid block modeling, sketches, extrusions; fitting and tolerance tweaks for test samples.
+- For Business: multi-color signs, custom jigs, stencils, hinges, handles, organizers, dispensers.
+- For Home: wall artwork, cosplay props, masks, holiday decor, paintable models, vases, customized gifts.
 - Small batch manufacturing, with threaded brass inserts, and laser engraving <a href="https://cloud-interfaces.square.site/product/3d-print-post-processing-15min/78">post-print services available</a>.
 - We stock <a href="https://all3dp.com/2/petg-filament-all-you-need-to-know/">PETG</a> filament, copolymer cousin to <a href="https://en.wikipedia.org/wiki/Polyethylene_terephthalate">PET</a> water bottles: rigid in up to 80C (176F) environments.
 - We use custom dry boxes, and forced air filament dehydrators, for consistent, high quality prints.
+- We offer affordable CAD services: rapid block modeling, sketches, extrusions, fit tolerances.
 
 <a href="m&#97;il&#116;o&#58;&#37;6&#56;ell%6F&#64;c&#108;o&#117;d%&#54;&#57;&#110;t%&#54;5r&#37;66%6&#49;%63&#37;&#54;&#53;s%2Ebiz?Sub&#106;e&#99;%74%&#51;D&#51;D&#80;&#114;i&#110;&#116;&#81;%&#55;&#53;ote">Contact Us</a> with an object file attached, for a free print service quote.
 Estimate <strong>filament</strong> and <strong>print time</strong> by slicing your model in <a href="https://ultimaker.com/software/ultimaker-cura/">Cura</a> or <a href="https://www.prusa3d.com/en/page/prusaslicer_424/">PrusaSlicer</a>.
 </pre>
 <table style="border-spacing: 1px;">
 	<tr>
-		<td><div class="shortVertTab" style="color: orange;"><br>&hairsp;&hairsp;Step 0</div></td>
+		<td><div class="shortVertTab" style="color: orange;"><br>&nbsp;&nbsp;&nbsp;Step 0</div></td>
 		<td><div class="shortButton"><br><strong>You Provide</strong> Model<br><br><strong>FREE</strong><a href="m&#97;il&#116;o&#58;&#37;6&#56;ell%6F&#64;c&#108;o&#117;d%&#54;&#57;&#110;t%&#54;5r&#37;66%6&#49;%63&#37;&#54;&#53;s%2Ebiz?Sub&#106;e&#99;%74%&#51;D&#51;D&#80;&#114;i&#110;&#116;&#81;%&#55;&#53;ote"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>We Create</strong> Model<br><br><strong>$10 / 15Min</strong><a href="https://cloud-interfaces.square.site/product/3d-cad-15-minutes/13"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>We Modify</strong> Model<br><br><strong>$3.50 / 5Min</strong><a href="https://cloud-interfaces.square.site/product/3d-cad-quickies/14"><span class="link"></span></a></div></td>
@@ -398,7 +407,7 @@ Estimate <strong>filament</strong> and <strong>print time</strong> by slicing yo
 </table>
 <table style="border-spacing: 1px;">
 	<tr>
-		<td><div class="shortVertTab" style="color: yellow;"><br>&hairsp;&hairsp;Step 1</div></td>
+		<td><div class="shortVertTab" style="color: yellow;"><br>&nbsp;&nbsp;&nbsp;Step 1</div></td>
 		<td><div class="shortButton"><br><strong>3HRs</strong> Print Time<br><br><strong>$4 Rate</strong><a href="https://cloud-interfaces.square.site/product/3d-print-3-hours/77"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>6HRs</strong> Print Time<br><br><strong>$6 Rate</strong><a href="https://cloud-interfaces.square.site/product/3d-print-6-hours/19"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>12HRs</strong> Print Time<br><br><strong>$10 Rate</strong><a href="https://cloud-interfaces.square.site/product/3d-print-12-hours/11"><span class="link"></span></a></div></td>
@@ -407,7 +416,7 @@ Estimate <strong>filament</strong> and <strong>print time</strong> by slicing yo
 </table>
 <table style="border-spacing: 1px;">
 	<tr>
-		<td><div class="shortVertTab" style="color: lightgreen;"><br>&hairsp;&hairsp;Step 2</div></td>
+		<td><div class="shortVertTab" style="color: lightgreen;"><br>&nbsp;&nbsp;&nbsp;Step 2</div></td>
 		<td><div class="shortButton"><br><strong>Prototype</strong> Filament<br><br><strong>$0.14 / 10 Grams</strong><a href="https://cloud-interfaces.square.site/product/3d-filament-prototype-10g/15"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>Budget</strong> Filament<br><br><strong>$0.18 / 10 Grams</strong><a href="https://cloud-interfaces.square.site/product/3d-filament-budget-10g/43"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>Production</strong> Filament<br><br><strong>$0.22 / 10 Grams</strong><a href="https://cloud-interfaces.square.site/product/3d-filament-production-10g/16"><span class="link"></span></a></div></td>
@@ -416,7 +425,7 @@ Estimate <strong>filament</strong> and <strong>print time</strong> by slicing yo
 </table>
 <table style="border-spacing: 1px;">
 	<tr>
-		<td><div class="shortVertTab" style="color: cyan;"><br>&hairsp;&hairsp;Step 3</div></td>
+		<td><div class="shortVertTab" style="color: cyan;"><br>&nbsp;&nbsp;&nbsp;Step 3</div></td>
 		<td><div class="shortButton"><br><strong>Local Pickup</strong><br><br><strong>FREE</strong><a href="https://calendly.com/cloudinterfaces/service-event"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>USPS Ground, &lt;8oz</strong><br><br><strong>Bubble Mailer, $7</strong><a href="https://cloud-interfaces.square.site/product/usps-shipping-small/67"><span class="link"></span></a></div></td>
 		<td><div class="shortButton"><br><strong>USPS Ground, Large</strong><br><br><strong>Custom Boxed, $15</strong><a href="https://cloud-interfaces.square.site/product/usps-shipping-large/68"><span class="link"></span></a></div></td>
