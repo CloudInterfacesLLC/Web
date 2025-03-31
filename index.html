@@ -13,11 +13,16 @@ body {
     font-family: "Lucida Console", "Consolas", "Courier New", "SF Mono", "Monaco", "Roboto Mono", "DejaVu Sans Mono", monospace;
     background: black;
 }
-.titleText1 {animation: fadeIn1 1s linear 1 normal;} @keyframes fadeIn1 {from {color: black;} to {color: #FFF;}}
-.titleText2 {animation: fadeIn2 1.5s linear 1 normal;} @keyframes fadeIn2 {from {color: black;} to {color: #DDD;}}
-.titleText3 {animation: fadeIn3 2s linear 1 normal;} @keyframes fadeIn3 {from {color: black;} to {color: #BBB;}}
-.titleText4 {animation: fadeIn4 2.5s linear 1 normal;} @keyframes fadeIn4 {from {color: black;} to {color: #999;}}
-.titleText5 {animation: fadeIn5 3s linear 1 normal;} @keyframes fadeIn5 {from {color: black;} to {color: #777;}}
+.titleRow1 {animation: fadeIn1 1s linear 1 normal;}
+@keyframes fadeIn1 {from {color: black;} to {color: #FFF;}}
+.titleRow2 {animation: fadeIn2 1.5s linear 1 normal;}
+@keyframes fadeIn2 {from {color: black;} to {color: #DDD;}}
+.titleRow3 {animation: fadeIn3 2s linear 1 normal;}
+@keyframes fadeIn3 {from {color: black;} to {color: #BBB;}}
+.titleRow4 {animation: fadeIn4 2.5s linear 1 normal;}
+@keyframes fadeIn4 {from {color: black;} to {color: #999;}}
+.titleRow5 {animation: fadeIn5 3s linear 1 normal;}
+@keyframes fadeIn5 {from {color: black;} to {color: #777;}}
 .coreButton {
     font-family: "Segoe UI", "Open Sans", "Helvetica Neue", "Helvetica", sans;
     font-size: 1.6em;
@@ -218,13 +223,13 @@ div[data-descr]:focus::after {
     font-weight: 500;
     letter-spacing: 1px;
 }
+.contactLink {
+    animation: contact-text-pulse 2s infinite;
+}
 @keyframes contact-text-pulse {
     0% { color: orange; text-decoration: underline; text-decoration-color: orange;}
     50% { color: white; text-decoration: underline; text-decoration-color: white;}
     100% { color: orange; text-decoration: underline; text-decoration-color: orange;}
-}
-.contactLink {
-    animation: contact-text-pulse 2s infinite;
 }
 .link {
     position: absolute;
@@ -252,17 +257,17 @@ a:hover { color: yellow; }
 <center>
 <pre>
 &nbsp;
-<span class="titleText5" style="color: #777;"> %%%%...%%.......%%%%...%%..%%..%%%%%......%%%%%%..%%..%%..%%%%%%..%%%%%%..%%%%%...%%%%%%...%%%%....%%%%...%%%%%%...%%%% </span>
-<span class="titleText4" style="color: #999;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%%.%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%......%%    </span>
-<span class="titleText3" style="color: #BBB;">%%......%%......%%..%%..%%..%%..%%..%%.......%%....%%.%%%....%%....%%%%....%%%%%...%%%%....%%%%%%..%%......%%%%.....%%%% </span>
-<span class="titleText2" style="color: #DDD;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%..%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%..........%%</span>
-<span class="titleText1" style="color: #FFF;"> %%%%...%%%%%%...%%%%....%%%%...%%%%%......%%%%%%..%%..%%....%%....%%%%%%..%%..%%..%%......%%..%%...%%%%...%%%%%%...%%%% </span>
+<span class="titleRow5" style="color: #777;"> %%%%...%%.......%%%%...%%..%%..%%%%%......%%%%%%..%%..%%..%%%%%%..%%%%%%..%%%%%...%%%%%%...%%%%....%%%%...%%%%%%...%%%% </span>
+<span class="titleRow4" style="color: #999;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%%.%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%......%%    </span>
+<span class="titleRow3" style="color: #BBB;">%%......%%......%%..%%..%%..%%..%%..%%.......%%....%%.%%%....%%....%%%%....%%%%%...%%%%....%%%%%%..%%......%%%%.....%%%% </span>
+<span class="titleRow2" style="color: #DDD;">%%..%%..%%......%%..%%..%%..%%..%%..%%.......%%....%%..%%....%%....%%......%%..%%..%%......%%..%%..%%..%%..%%..........%%</span>
+<span class="titleRow1" style="color: #FFF;"> %%%%...%%%%%%...%%%%....%%%%...%%%%%......%%%%%%..%%..%%....%%....%%%%%%..%%..%%..%%......%%..%%...%%%%...%%%%%%...%%%% </span>
 </pre>
 &nbsp;
 <table style="border-spacing: 0px; border-radius: 45px; box-shadow: 0 0 25px #00F; background: linear-gradient(to right,#006,#008,#006);">
 	<tr>
 		<td>&nbsp;</td>
-		<td><div class="coreButton">Contact<a href="&#109;&#97;&#105;lto&#58;hel%6&#67;&#111;&#64;&#99;%&#54;C&#37;6F%75%64i%&#54;E&#116;%&#54;5rfa%63&#37;65s&#37;2&#69;%6&#50;i&#122;?S&#117;b&#37;6A%&#54;5&#99;t=&#87;%65%6&#50;C%6F%6&#69;&#37;74%61ct"><span class="link"></span></a></div></td>
+		<td><div class="coreButton">Contact<a href='&#109;ai&#108;&#116;o&#58;%6&#51;loud&#105;&#110;&#37;&#55;4&#101;rf%61%&#54;&#51;e&#64;%&#55;&#52;%75%74&#97;&#46;%&#54;3om'><span class="link"></span></a></div></td>
 		<td>&nbsp;</td>
 		<td><div class="coreButton">Schedule<a href="https://calendly.com/cloudinterfaces/service-event"><span class="link"></span></a></div></td>
 		<td>&nbsp;</td>
@@ -506,9 +511,9 @@ We'll also courier over our 3D prints, for travel rates, when the order total is
 <table style="border-spacing: 1px; box-shadow: 5px 5px 15px #A9F;"><!--A9F-->
 	<tr>
 		<td><div class="vertTab" style="color: #A9F;"><br><strong>&nbsp;&nbsp;&nbsp;Multi Color</strong></div></td>
-		<td><div class="serviceButton"><br><strong>Manual Color Swap</strong><br>At any specified layer(s),<br>change filament by hand<br>Ideal for 2D art & text<br><br><strong>$2</strong> / Swap<a href="https://cloud-interfaces.square.site/product/3d-color-change-manual/87"><span class="link"></span></a></div></td>
-		<td><div class="serviceButton"><br><strong>MMU3 5-Color Setup</strong><br>We swap in your spools,<br>assign model piece colors,<br>and optimize for printing<br><br><strong>$7</strong> Setup Fee<a href="https://cloud-interfaces.square.site/product/3d-color-mmu-setup/88"><span class="link"></span></a></div></td>
-		<td><div class="serviceButton"><br><strong>Medium 5-Color Print</strong><br>Up To <strong>250g</strong> filament<br>Up To <strong>24hr</strong> print<br>Local Pickup<br><br><strong>$28</strong> Bundle<a href="https://cloud-interfaces.square.site/product/3d-color-bundle-medium/89"><span class="link"></span></a></div></td>
+		<td><div class="serviceButton"><br><strong>MMU3 5-Color Setup</strong><br>Swap in spool colors,<br>assign piece colors,<br>optimize print config<br><br><strong>$7</strong> Setup Fee<a href="https://cloud-interfaces.square.site/product/3d-color-mmu-setup/88"><span class="link"></span></a></div></td>
+        <td><div class="serviceButton"><br><strong>Small 5-Color Print</strong><br>Up To <strong>100g</strong> filament<br>Up To <strong>12hr</strong> print<br>Local Pickup<br><br><strong>$15</strong> Bundle<a href="https://cloud-interfaces.square.site/product/3d-color-bundle-small/89"><span class="link"></span></a></div></td>
+        <td><div class="serviceButton"><br><strong>Medium 5-Color Print</strong><br>Up To <strong>250g</strong> filament<br>Up To <strong>24hr</strong> print<br>Local Pickup<br><br><strong>$27</strong> Bundle<a href="https://cloud-interfaces.square.site/product/3d-color-bundle-medium/92"><span class="link"></span></a></div></td>
 		<td><div class="serviceButton"><br><strong>Large 5-Color Print</strong><br>Up To <strong>500g</strong> filament<br>Up To <strong>48hr</strong> print<br>Local Pickup<br><br><strong>$48</strong> Bundle<a href="https://cloud-interfaces.square.site/product/3d-color-bundle-large/90"><span class="link"></span></a></div></td>
 	</tr>
 </table>
